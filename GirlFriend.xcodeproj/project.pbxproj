@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		8F36F666C7439B84FECFABA6 /* UserAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F36F628EE17BBF9EFC23751 /* UserAgent.m */; };
+		B30B782F1F76A1A400056C0D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3E362D618A39D2900921EE3 /* MainMenu.xib */; };
 		B3E362C218A39D2900921EE3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E362C118A39D2900921EE3 /* Cocoa.framework */; };
 		B3E362CC18A39D2900921EE3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3E362CA18A39D2900921EE3 /* InfoPlist.strings */; };
 		B3E362CE18A39D2900921EE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E362CD18A39D2900921EE3 /* main.m */; };
 		B3E362D218A39D2900921EE3 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B3E362D018A39D2900921EE3 /* Credits.rtf */; };
 		B3E362D518A39D2900921EE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E362D418A39D2900921EE3 /* AppDelegate.m */; };
-		B3E362D818A39D2900921EE3 /* .xib in Resources */ = {isa = PBXBuildFile; fileRef = B3E362D618A39D2900921EE3 /* .xib */; };
 		B3E362DA18A39D2900921EE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E362D918A39D2900921EE3 /* Images.xcassets */; };
 		B3E362F618A3A4A800921EE3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E362F518A3A4A800921EE3 /* WebKit.framework */; };
 /* End PBXBuildFile section */
@@ -45,7 +45,7 @@
 		B3E362D118A39D2900921EE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		B3E362D318A39D2900921EE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B3E362D418A39D2900921EE3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B3E362D718A39D2900921EE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Base.lproj/\n\n\n.xib"; sourceTree = "<group>"; };
+		B3E362D718A39D2900921EE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B3E362D918A39D2900921EE3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B3E362F518A3A4A800921EE3 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		E5DAAADE6554407C9DABD475 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,7 +105,7 @@
 		B3E362C718A39D2900921EE3 /* GirlFriend */ = {
 			isa = PBXGroup;
 			children = (
-				B3E362D618A39D2900921EE3 /* .xib */,
+				B3E362D618A39D2900921EE3 /* MainMenu.xib */,
 				B3E362D918A39D2900921EE3 /* Images.xcassets */,
 				B3E362C818A39D2900921EE3 /* Supporting Files */,
 				B3E362D318A39D2900921EE3 /* AppDelegate.h */,
@@ -157,6 +157,12 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = ZYXW;
+				TargetAttributes = {
+					B3E362BD18A39D2900921EE3 = {
+						DevelopmentTeam = DD4ZUKAH26;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = B3E362B918A39D2900921EE3 /* Build configuration list for PBXProject "GirlFriend" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -181,10 +187,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B30B782F1F76A1A400056C0D /* MainMenu.xib in Resources */,
 				B3E362CC18A39D2900921EE3 /* InfoPlist.strings in Resources */,
 				B3E362DA18A39D2900921EE3 /* Images.xcassets in Resources */,
 				B3E362D218A39D2900921EE3 /* Credits.rtf in Resources */,
-				B3E362D818A39D2900921EE3 /* .xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,12 +226,12 @@
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
-		B3E362D618A39D2900921EE3 /* .xib */ = {
+		B3E362D618A39D2900921EE3 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B3E362D718A39D2900921EE3 /* Base */,
 			);
-			name = "\n\n\n.xib";
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -312,7 +318,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DD4ZUKAH26;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GirlFriend-ccjmnafcsrmdctbhwtvlfafrmdyn/Build/Products/Debug",
@@ -320,7 +329,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GirlFriend/GirlFriend-Prefix.pch";
 				INFOPLIST_FILE = "GirlFriend/GirlFriend-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zyxw.girlfriend;
 				PRODUCT_NAME = "ガールフレンド(仮)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -330,7 +341,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DD4ZUKAH26;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GirlFriend-ccjmnafcsrmdctbhwtvlfafrmdyn/Build/Products/Debug",
@@ -338,7 +352,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GirlFriend/GirlFriend-Prefix.pch";
 				INFOPLIST_FILE = "GirlFriend/GirlFriend-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zyxw.girlfriend;
 				PRODUCT_NAME = "ガールフレンド(仮)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
