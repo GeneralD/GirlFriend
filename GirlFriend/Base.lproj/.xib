@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14B23" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
+        <plugIn identifier="com.apple.WebKitIBPlugin" version="6250"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="494" id="495"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <menu title="AMainMenu" systemMenu="main" id="29">
+            <items>
+                <menuItem title="ガールフレンド(仮)" id="56">
+                    <menu key="submenu" title="ガールフレンド(仮)" systemMenu="apple" id="57">
+                        <items>
+                            <menuItem title="このアプリについて" id="58">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-2" id="142"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="236">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="隠す" keyEquivalent="h" id="134">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="367"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="他を隠す" keyEquivalent="h" id="145">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="368"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="全て表示" id="150">
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="370"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="149">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="終了" keyEquivalent="q" id="136">
+                                <connections>
+                                    <action selector="terminate:" target="-3" id="449"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="移動" id="9Ph-Jz-62A">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="移動" id="qa2-jg-Grb">
+                        <items>
+                            <menuItem title="マイページ(1st-page)" keyEquivalent="1" id="PYB-Z2-fKI">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="goMypage:" target="494" id="zgO-eg-PYf"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="登校(Attend)" keyEquivalent="a" id="n73-Ts-auu">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="goQuest:" target="494" id="JfX-ED-vuX"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="バトル(Battle)" keyEquivalent="b" id="HvU-2o-IJZ">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="goBattle:" target="494" id="AKL-Cg-A9I"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="部活(Club)" keyEquivalent="c" id="orx-qR-1E0">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="goClub:" target="494" id="tf1-X7-3to"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="進展(Upgrade)" keyEquivalent="u" id="SHk-ua-Vq1">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="goEvolution:" target="494" id="aZZ-cH-1oE"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="エール(Yale)" keyEquivalent="y" id="gqf-OZ-sHH">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="goUpgrade:" target="494" id="t7b-wN-0uo"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="キューピッド(Q-pid)" keyEquivalent="q" id="vl9-dy-6Lj">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="goCupid:" target="494" id="HZV-P8-z65"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="センバツ(Deck)" keyEquivalent="d" id="hLp-F0-Vgs">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="goDeck:" target="494" id="rez-YQ-aQ0"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="クラス(Ranking)" keyEquivalent="r" id="Wd3-nI-iBJ">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="goGrade:" target="494" id="YRM-cS-lsF"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="購買部(Shop)" keyEquivalent="s" id="Xqp-RK-P1h">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="goShop:" target="494" id="W7O-X9-j8w"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="バッグ(V(B)ag)" keyEquivalent="v" id="yfQ-3C-W20">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="goItem:" target="494" id="Hz4-cj-bDc"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="ガールズ(Girls)" keyEquivalent="g" id="v4M-Ru-st6">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="goCard:" target="494" id="yZO-ld-lhY"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="名簿(Names)" keyEquivalent="n" id="tyd-9s-jyW">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="goCollection:" target="494" id="WJp-5y-SrN"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="ギフト(giftboX)" keyEquivalent="x" id="Stl-U2-jbK">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="goGiftbox:" target="494" id="meL-6m-u0l"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="秘蔵写真(hiZo)" keyEquivalent="z" id="9PO-86-d1N">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="goTreasure:" target="494" id="zDW-CO-9c0"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="プロフ(Profile)" keyEquivalent="p" id="g12-MM-0f8">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="goProfile:" target="494" id="0cP-I4-VID"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="友達(Friends)" keyEquivalent="f" id="2sZ-Wc-1rH">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="goFriend:" target="494" id="szL-f9-0k7"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="ヘルプ(Help)" keyEquivalent="h" id="S9R-78-0tR">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="goHelp:" target="494" id="FTj-ft-qnz"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="トップ(Top)" keyEquivalent="t" id="O5J-R8-y5b">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="goTop:" target="494" id="JIl-nE-gHe"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="劇場(5(S)cenario)" keyEquivalent="5" id="SoN-4L-Rmh">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="goScenario:" target="494" id="IcY-XI-Usa"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="コントロール" id="tlx-oQ-i0g">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="コントロール" id="W4s-ev-5LR">
+                        <items>
+                            <menuItem title="戻る" keyEquivalent="2" id="WaC-Ic-KU2">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="goBack:" target="494" id="vza-yP-MJW"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="進む" keyEquivalent="3" id="u3o-A0-2aa">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="goForward:" target="494" id="zVp-hN-nDX"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="更新" keyEquivalent="4" id="Mr0-6B-OJJ">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="reload:" target="494" id="ldU-Ml-iFC"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="最初までスクロール" keyEquivalent=" " id="1o3-Au-IbU">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" control="YES"/>
+                                <connections>
+                                    <action selector="scrollToBegin:" target="494" id="aid-IM-uJP"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="最後までスクロール" keyEquivalent=" " id="au9-sa-NGB">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="scrollToEnd:" target="494" id="vuL-hb-6Lx"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="ウィンドウ" id="d4n-iA-mDj">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="ウィンドウ" systemMenu="window" id="RY0-AV-KFa">
+                        <items>
+                            <menuItem title="最小化" keyEquivalent="m" id="tYa-t1-rW4">
+                                <connections>
+                                    <action selector="performMiniaturize:" target="-1" id="PCY-jE-Kns"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="7DX-Vx-Noz"/>
+                            <menuItem title="最前面へ" id="vWB-8p-NHR">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="arrangeInFront:" target="-1" id="uC9-7T-FNT"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="ヘルプ" id="490">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="ヘルプ" systemMenu="help" id="491">
+                        <items>
+                            <menuItem title="ヘルプ" keyEquivalent="?" id="492">
+                                <connections>
+                                    <action selector="goHelp:" target="494" id="dUM-Nf-Gc8"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" animationBehavior="default" id="371">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="335" y="390" width="320" height="568"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <view key="contentView" id="372">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <webView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7IZ-zb-MuI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <webPreferences key="preferences" defaultFontSize="11" defaultFixedFontSize="12" javaScriptCanOpenWindowsAutomatically="NO">
+                            <nil key="identifier"/>
+                        </webPreferences>
+                    </webView>
+                    <progressIndicator hidden="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" bezeled="NO" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="jJV-vB-YZh">
+                        <rect key="frame" x="144" y="268" width="32" height="32"/>
+                    </progressIndicator>
+                </subviews>
+            </view>
+            <toolbar key="toolbar" implicitIdentifier="DD2F651B-C56F-413C-A8BD-0A01FE6305BD" displayMode="iconOnly" sizeMode="regular" id="fxJ-rC-KWo">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="P4U-yR-9WJ"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="mOd-ww-7py"/>
+                    <toolbarItem implicitItemIdentifier="8EF66332-B844-44CE-B5CE-811EF9F4AE6F" label="History" paletteLabel="History" id="F41-jn-XPY">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="56" height="25"/>
+                        <size key="maxSize" width="56" height="28"/>
+                        <segmentedControl key="view" verticalHuggingPriority="750" id="bCD-Z1-bzN">
+                            <rect key="frame" x="0.0" y="14" width="56" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <segmentedCell key="cell" borderStyle="border" alignment="left" style="texturedRounded" trackingMode="momentary" id="BXK-lb-MaF">
+                                <font key="font" metaFont="system"/>
+                                <segments>
+                                    <segment image="NSGoLeftTemplate">
+                                        <nil key="label"/>
+                                    </segment>
+                                    <segment image="NSGoRightTemplate" width="24" tag="1">
+                                        <nil key="label"/>
+                                    </segment>
+                                </segments>
+                            </segmentedCell>
+                        </segmentedControl>
+                        <connections>
+                            <action selector="historyButtonClickedUp:" target="494" id="mn6-LZ-Eii"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="6A6E6C25-2B9E-4AFE-AEEA-46EF40E0F556" label="Refresh" paletteLabel="Refresh" id="PRH-EW-Xe5">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="32" height="25"/>
+                        <size key="maxSize" width="32" height="28"/>
+                        <segmentedControl key="view" verticalHuggingPriority="750" id="WfJ-CP-2gZ">
+                            <rect key="frame" x="8" y="14" width="32" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <segmentedCell key="cell" borderStyle="border" alignment="left" style="texturedRounded" trackingMode="momentary" id="aqh-R6-5At">
+                                <font key="font" metaFont="system"/>
+                                <segments>
+                                    <segment image="NSRefreshTemplate"/>
+                                </segments>
+                            </segmentedCell>
+                        </segmentedControl>
+                        <connections>
+                            <action selector="reload:" target="494" id="h4Q-V0-1oK"/>
+                        </connections>
+                    </toolbarItem>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="F41-jn-XPY"/>
+                    <toolbarItem reference="mOd-ww-7py"/>
+                    <toolbarItem reference="PRH-EW-Xe5"/>
+                </defaultToolbarItems>
+            </toolbar>
+            <point key="canvasLocation" x="522" y="595"/>
+        </window>
+        <customObject id="494" customClass="AppDelegate">
+            <connections>
+                <outlet property="progressIndicator" destination="jJV-vB-YZh" id="3JG-di-UhP"/>
+                <outlet property="webView" destination="7IZ-zb-MuI" id="xHk-E6-bnD"/>
+                <outlet property="window" destination="371" id="8ga-t7-Lko"/>
+            </connections>
+        </customObject>
+        <customObject id="420" customClass="NSFontManager"/>
+    </objects>
+    <resources>
+        <image name="NSGoLeftTemplate" width="9" height="12"/>
+        <image name="NSGoRightTemplate" width="9" height="12"/>
+        <image name="NSRefreshTemplate" width="11" height="15"/>
+    </resources>
+</document>

@@ -6,9 +6,13 @@
 //  Copyright (c) 2014 ZYXW. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+int main(int argc, const char *argv[]) {
 
-int main(int argc, const char * argv[])
-{
+// Graphite interface (Apple Private API)
+//	[[NSUserDefaults standardUserDefaults]
+//			setVolatileDomain:@{
+//					@"AppleAquaColorVariant" : @(NSGraphiteControlTint),
+//			} forName:NSArgumentDomain];
+
 	return NSApplicationMain(argc, argv);
 }
